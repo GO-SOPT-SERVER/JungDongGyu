@@ -11,8 +11,12 @@ import javax.validation.constraints.NotNull;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class BoardRequestDto {
-    @Email(message = "이메일 형식에 맞지 않습니다")
-    private String email;
+    /**
+     * Header의 JWT를 통해서 이메일
+     */
+//    @Email(message = "이메일 형식에 맞지 않습니다")
+//    private String email;
+
 
     @NotBlank
     private String title;
