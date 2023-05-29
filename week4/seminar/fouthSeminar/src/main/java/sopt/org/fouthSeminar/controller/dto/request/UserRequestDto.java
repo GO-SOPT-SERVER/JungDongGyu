@@ -1,5 +1,6 @@
 package sopt.org.fouthSeminar.controller.dto.request;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +12,7 @@ import javax.validation.constraints.Pattern;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Schema(description = "유저 생성 DTO")
 public class UserRequestDto {
 
     @NotBlank
