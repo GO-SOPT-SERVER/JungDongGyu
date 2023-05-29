@@ -151,4 +151,8 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
+### Yaml ###
+*.yaml
+*.yml
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,java,gradle,git,linux
