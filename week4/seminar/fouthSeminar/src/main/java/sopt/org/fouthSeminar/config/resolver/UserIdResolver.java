@@ -33,7 +33,7 @@ public class UserIdResolver implements HandlerMethodArgumentResolver {
          * Request 내 Header 에서 Token 가져오기
          */
         final HttpServletRequest request = (HttpServletRequest) webRequest.getNativeRequest();
-        final String token = request.getHeader("Authorization");
+        final String token = request.getHeader("Authorization").split(" ")[1];
 
         // 토큰 검증
         if (!jwtService.verifyToken(token)) {

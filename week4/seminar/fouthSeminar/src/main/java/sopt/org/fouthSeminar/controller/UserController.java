@@ -1,5 +1,6 @@
 package sopt.org.fouthSeminar.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,7 @@ import javax.validation.Valid;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/user")
+@Tag(name = "User", description = "유저 API Document")
 public class UserController {
     private final UserService userService;
     private final JwtService jwtService;
